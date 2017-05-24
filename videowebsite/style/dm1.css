@@ -1,0 +1,113 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+*{ margin:0px ; padding:0px; }
+a{ text-decoration:none; cursor:pointer; color:#81797d}
+
+
+header{ height:45px; background-color:#000;}
+header #h_center{ width:1200px; height:45px; margin-left:auto; margin-right:auto; line-height:43px; position:relative;}
+header #h_center #h_left{ float:left;}
+header #h_center #h_left ul{ list-style-type:none;}
+header #h_center #h_left ul li{ display:inline-block; height:45px; width:77px; text-align:center;}
+header #h_center #h_left ul li a{ color:#FFF; font-size:14px; font-weight:700; }
+header #h_center #h_left ul li:hover{ background-color:#333;}
+
+header #geren{ position:absolute; top:45px; left:660px; line-height:24px;height:50px; width:90px; background:#333; color:#FFF; display:none;}
+header #geren a{ color:#FFF;}
+header #geren p{ padding-left:10px;}
+header #geren p:hover{ background-color:#666; }
+
+header #h_center #h_right{ float:right; padding-right:20px;}
+header #h_center #h_right input[type=text]{ float:left ; width:11em; height:1.5em; margin-top:1em}
+header #h_center #h_right input[type=submit]{ float:right; border-radius:0.75em;width:2.5em; height:1.5em;margin-top:1em}
+
+
+
+article{ width:1180px;  margin-left:auto; margin-right:auto;}
+article  #top #top1{ height:80px; line-height:80px; color:#bec3c7; font-size:12px; }
+article  #top #top1 img{ margin-right:10px; }
+article  #top #top1 a:hover{ color:#47cdbc;}
+
+article #a_left{ width:850px; float:left; padding-right:40px; padding-left:10px;}
+article #a_left .nothing{ height:40px ;}
+article #a_left ul{ list-style-type:none;}
+article #a_left ul li{ width:70px; height:30px; line-height:30px; text-align:center; vertical-align:middle; 
+						display:inline-block; border:#333 solid 1px; margin-bottom:5px; border-radius:5px; font-weight:700;}
+article #a_left ul li:hover{ background-color:#FCF;}
+article .xuanji_content{ margin-top:20px;}
+article .xuanji_content img{ height:170px; width:138px; float:left;}
+article .xuanji_content p{ margin-bottom:15px;}
+article .xuanji_content b{ color:#F9C; margin-right:15px;}
+
+.play_area{background-color:#0F3;height:600px;width:1180px;}
+
+
+article #pl{ }
+article .pinglun form{ margin-top:100px;}
+article .pinglun form textarea{ width:800px; height:60px; resize: none; overflow:hidden; border:1px solid #3CF; border-radius:15px; padding:15px;}
+article .pinglun form input[type="button"]{ width:60px; height:30px; line-height:30px; background-color:#3CF; border-radius:5px;}
+
+article #pl .nothing{ width:800px; height:20px; border-bottom:1px solid #0FF; margin-bottom:50px;}
+article .pinglun_content,article .pinglun_content div{ position:relative;}
+article .pinglun_content div{ height:120px; width:770px; border-bottom:1px solid #CCC; margin-bottom:20px; padding:0px;}
+article .pinglun_content .touxiang,
+article .pinglun_content .user,
+article .pinglun_content .time,
+article .pinglun_content .neirong,
+article .pinglun_content .zan,
+article .pinglun_content .fandui,
+article .pinglun_content .huifu,
+article .pinglun_content .jubao{ position:absolute; display:inline-block;}
+
+article .pinglun_content .touxiang{ height:40px; width:40px; border-radius:20px; left:5px; top:5px; border:1px solid #6FF; overflow:hidden;}
+article .pinglun_content .user{	height:20px; width:80px; left:55px; top:5px; color:#F6C; font-size:12px;}
+article .pinglun_content .user a{color:#F6C; font-size:12px;}
+article .pinglun_content .time{ height:20px; width:180px; right:5px; top:5px; font-size:12px; font-weight:700; text-align:right;}
+article .pinglun_content .neirong{ height:40px; width:500px; left:55px; top:55px;}
+article .pinglun_content .zan{ height:20px; width:40px; right:5px; bottom:5px;}
+article .pinglun_content .fandui{ height:20px; width:40px; right:55px; bottom:5px;}
+article .pinglun_content .huifu{ height:20px; width:40px; right:105px; bottom:5px;}
+article .pinglun_content .jubao{ height:20px; width:40px; right:155px; bottom:5px; }
+article .pinglun_content .zan:hover,article .pinglun_content .fandui:hover,
+article .pinglun_content .huifu:hover,article .pinglun_content .jubao:hover,
+article .pinglun_content .user a{ cursor:pointer; color:#F9C;}
+
+article #a_right{width:270px; float:right;}
+article #a_right .nothing{ height:40px ;}
+article #a_right .right_top{ height:50px ; border-bottom:2px solid #CCC;  position:relative;}
+article #a_right .right_top span{ display:inline-block; position:absolute; bottom:10px;}
+article #a_right .right_top .s1{ height:20px; width:5px; background-color:#0C6; left:5px; }
+article #a_right .right_top .s2{ left:25px;}
+article #a_right .right_top .s3{ width:20px; right:60px; cursor:pointer;}
+article #a_right .right_top .s4{ width:20px; right:30px; cursor:pointer;}
+article #a_right .right_top .active{ border-bottom:4px solid #C00; bottom:6px;}
+
+article #a_right .right_center{ font-size:14px;}
+article #a_right .right_center a:hover{ color:#F69;}
+
+article #a_right .right_center .left{height:170px; width:130px;  display:none;}
+article #a_right .right_center .left img{height:170px; width:138px; }
+article #a_right .right_center .right{height:170px; width:130px; }
+article #a_right .right_center .right p{ display:none;}
+article h5{ font-size:14px; line-height:24px; }
+article h5 span{ height:20px ; width:20px;; text-align:center; color:#FFF; display:inline-block; background-color:#F30;}
+
+article #a_right .right_center .active .left{ display:block; float:left;}
+article #a_right .right_center .active .right{ display:block; float:right;}
+article #a_right .right_center .active  p{ display:block}
+article #a_right  #right_center2{ display:none}
+
+article #a_right #genxin{ clear:both;}
+
+footer{ height:146px;  clear:both;}
+footer .center{ height:86px; width:1020px; padding:30px; margin-left:auto; margin-right:auto;}
+footer .center span{height:30px; width:17px; line-height:30px; text-align:center; border:1px solid #000; color:#000; margin-left:8px; display:inline-block;}
+footer .center span a{ color:#000;}
+footer .center span a:hover{ color:#F00;}
+footer .center span:hover{ color:#F00; border:1px solid #F00;}
+footer .bottom{ margin-top:15px;}
+footer .center img{ vertical-align:middle; }
+
+

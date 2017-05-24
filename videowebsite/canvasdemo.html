@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>无标题文档</title>
+<style type="text/css">
+div{width:600px; margin:0 auto;}
+canvas{background-color:#F9F; }
+</style>
+
+
+</head>
+
+<body>
+
+<div>
+
+<canvas height="400" width="600" id="canvas"></canvas>
+<button id="fz">复制</button><button id="zt">暂停</button>
+</div>
+
+
+<script>
+//var img=new Image();
+//img.src="1.jpg";
+//img.onload=function(){
+	
+	var ct=document.getElementById('canvas')
+	var ctx=ct.getContext('2d');
+//	ctx.drawImage(img,0,100);
+	var jb=ctx.createLinearGradient(0,0,0,300);
+//	jb.addColorStop(0,'rgba(255,0,0,1)');
+//    jb.addColorStop(0.5,'rgba(0,0,0,1)');
+//	jb.addColorStop(1,'rgba(0,0,255,1)');
+//	ctx.fillStyle=jb;
+//	ctx.fillRect(200,100,200,200);
+
+
+//    var jb=ctx.createRadialGradient(300,200,10,300,200,100) ;
+		jb.addColorStop(0,'rgba(255,0,0,1)');
+  jb.addColorStop(0.2,'rgba(0,255,0,1)');
+	jb.addColorStop(0.4,'rgba(0,0,255,1)');
+		jb.addColorStop(0.6,'rgba(255,255,0,1)');
+  jb.addColorStop(0.8,'rgba(0,255,255,1)');
+	jb.addColorStop(1,'rgba(255,0,255,0.5)');
+	ctx.fillStyle=jb;
+	ctx.fillRect(0,100,200,200);
+var i=0,j=0;
+var kz=document.getElementById('fz')
+   kz.onclick=function(){
+  var daq=setInterval(function(){ if(i<204&j<204){
+   var c=ctx.getImageData(i,100+j,4,4); 
+    ctx.putImageData(c,400+i,100+j); 
+    
+	i+=4;
+	}
+	
+	else{
+		i=0;
+		j+=4
+		
+	}
+   },20)
+   
+   var kz2=document.getElementById('zt')   
+   kz2.onclick=function(){clearInterval(daq)
+   
+   
+   
+   }
+}
+
+//};
+
+
+
+</script>
+</body>
+</html>

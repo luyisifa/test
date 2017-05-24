@@ -1,0 +1,4 @@
+video.html是一个外置的视频播放用iframe镶嵌到dm1.html
+index.html只有第一个可以播放，导航只有个人中心的登录.注册可以用
+登录注册有验证，不过做的一般般，没考虑太多
+canvasdemo.html只是一个小demo和网站没有关系，

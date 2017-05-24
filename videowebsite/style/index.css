@@ -1,0 +1,139 @@
+@charset "utf-8";
+/* CSS Document */
+/*html{ overflow-x:hidden}*/
+*{ margin:0em ; padding:0em; }
+a{ text-decoration:none; cursor:pointer; color:#81797d}
+body{overflow-x:hidden}
+
+header{ height:3em; background-color:#000; width:auto;}
+header #h_center{ width:75em; height:3em; margin-left:auto; margin-right:auto; line-height:3em; position:relative;}
+header #h_center #h_left{ float:left; width:80%;}
+header #h_center #h_left ul{ list-style-type:none;}
+header #h_center #h_left ul li{ display:inline-block; height:3em; width:8.5%; text-align:center;}
+header #h_center #h_left ul li a{ color:#FFF; font-size:0.875em; font-weight:700; }
+header #h_center #h_left ul li:hover{ background-color:#333;}
+
+header #geren{ position:absolute; top:3em; left:41.25em; line-height:1.5em;height:3.125em; width:5.625em; background:#333; color:#FFF; display:none;}
+header #geren a{ color:#FFF;}
+header #geren p{ padding-left:0.625em;}
+header #geren p:hover{ background-color:#666; }
+
+header #h_center #h_right{ float:right; height:3em; width:12em; line-height:3em;}
+header #h_center #h_right input[type=text]{ float:left ; width:11em; height:1.5em; margin-top:1em}
+header #h_center #h_right input[type=submit]{ float:right; border-radius:0.75em;width:2.5em; height:1.5em;margin-top:1em}
+
+
+
+article{ width:73.75em;  margin-left:auto; margin-right:auto;}
+article #a_left{ width:75%; float:left;  }
+article #a_left #top #top1{ height:5em; line-height:5em; color:#bec3c7; font-size:0.75em; }
+article #a_left #top #top1 img{ margin-right:0.625em; }
+article #a_left #top #top1 a:hover{ color:#47cdbc;}
+article #a_left #top #top2{ height:2.1875em ; font-size:1.5em; font-weight:bold; color:#C00; border-bottom:0.0625em solid #bec3c7;}
+article #a_left #top #top2 span{height:1.5em; width:0.3125em; background-color:#3C6; display:inline-block; }
+article #a_left #top #top3{width:100%;}
+article #a_left #top #top3 tr td { width:6% ; height:1em; line-height:1em; }
+article #a_left #top #top3 tr td:hover{ background-color:#666;}
+article #a_left #top #table3{ width:95%; height:1em;}
+
+article #a_left #center{ margin-left:2em; width:95%;}
+article #a_left #center .content{ height:16.625em; width:85%; box-shadow:0.125em 0.125em 0.125em #666,-0.125em -0.125em 0.125em #666; 
+								margin-top:1.5625em; padding:1.375em; border-top:0.125em dashed #999; color:#bec3c7; font-size:0.75em; }
+article #a_left #center .left{ float:left; width:22%;  height:100%}
+article #a_left #center .left img{  height:100%; width:100%; border-radius:0.9375em;}
+article #a_left #center .left img:hover{ border:0.0625em solid #F00;}
+article #a_left #center .right{ float:right; width:76%;}								
+article #a_left #center .right p{ line-height:1.5em;}	
+article #a_left #center .right #jianjie{ line-height:1.5em; height:6em; overflow:hidden;width:100%; }
+article #a_left #center .right p span{ color:#C00;}
+article #a_left #center .right a:hover{ color:#F69;}
+
+
+article #a_right{width:16.875em; float:right;}
+article #a_right .nothing{ height:2.5em ;}
+article #a_right .right_top{ height:3.125em ; border-bottom:0.125em solid #CCC;  position:relative;}
+article #a_right .right_top span{ display:inline-block; position:absolute; bottom:0.625em;}
+article #a_right .right_top .s1{ height:1.25em; width:0.3125em; background-color:#0C6; left:0.3125em; }
+article #a_right .right_top .s2{ left:1.5625em;}
+article #a_right .right_top .s3{ width:1.25em; right:3.75em; cursor:pointer;}
+article #a_right .right_top .s4{ width:1.25em; right:1.875em; cursor:pointer;}
+article #a_right .right_top .active{ border-bottom:0.25em solid #C00; bottom:0.375;}
+
+article #a_right .right_center{ font-size:0.875em;}
+article #a_right .right_center a:hover{ color:#F69;}
+article #a_right .right_center div{ clear:both;}
+article #a_right .right_center .left{height:10.625em; width:9em;  display:none;}
+article #a_right .right_center .left img{height:100%; width:100%; }
+article #a_right .right_center .right{height:10.625em; width:9.875em; }
+article #a_right .right_center .right p{ display:none;}
+article h5{ font-size:0.875em; line-height:1.5em; }
+article h5 span{ height:1.25em ; width:1.25em;; text-align:center; color:#FFF; display:inline-block; background-color:#F30;}
+
+article #a_right .right_center .active .left{ display:block; float:left;}
+article #a_right .right_center .active .right{ display:block; float:right;}
+article #a_right .right_center .active  p{ display:block}
+
+article #a_right  #right_center2{ display:none}
+
+article #a_right #genxin{ clear:both;}
+
+footer{ height:9.125em;  clear:both; width:100%;}
+footer .center{ height:5.375em; width:100%; padding:1.875em; margin-left:auto; margin-right:auto;}
+footer .center span{height:1.875em; width:1.0625em; line-height:1.875em; text-align:center; border:0.0625em solid #000; color:#000; margin-left:0.5em; display:inline-block;}
+footer .center span a{ color:#000;}
+footer .center span a:hover{ color:#F00;}
+footer .center span:hover{ color:#F00; border:0.0625em solid #F00;}
+footer .bottom{ margin-top:0.9375em;}
+footer .center img{ vertical-align:middle; }
+
+@media screen and (max-width:1366px){
+header #h_center #h_right{ display:none}	
+article #a_right{ display:none}	
+
+header #h_center #h_left{ float:none; margin-left:auto; margin-right:auto}	
+article #a_left{ float:none; margin-left:auto; margin-right:auto; }	
+	}
+
+@media screen and (max-width:1024px){
+
+	header #h_center{ width:56em;}
+	article{ width:48em;}
+	footer .center{width:48em;}
+
+		article #a_left #top{display:none;}
+	article #a_left{ width:100%; margin-left:auto; margin-right:auto}
+	article #a_left #center .content{height:14em}
+	article #a_left #center .right #jianjie{ height:4.5em;}
+	}
+
+@media screen and (max-width:700px){
+	header { background-color:#FFF; border-bottom:#0FC solid 1px;}
+	header #h_center{display:none}
+	article #a_left{ float:none; margin-left:auto; margin-right:auto}
+
+	article{ width:36em;}
+	article #a_left #center .content{height:12em}
+	article #a_left #center .right #jianjie{ height:3em;}
+	}
+
+
+@media screen and (max-width:480px){	
+
+	article{ width:20em;}
+	article #a_left #center .content{height:10em}
+	article #a_left #center .right{ font-size:0.625em}
+	article #a_left #center .right #jianjie{ height:1.5em;}
+	footer{ display:none;}
+}
+
+
+
+
+
+
+
+
+
+
+
+

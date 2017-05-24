@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>videoplay</title>
+<script src="JavaScript/video.js"></script>
+<link rel="stylesheet" href="range_style/range.css">
+<link rel="stylesheet" href="style/video.css">
+</head>
+<body>
+<div class="video_bg" id="video_bg">
+
+    <div class="video_play" id="video_play">
+        <video src="video/3.mp4" id="video" autoplay ></video>
+    </div>
+
+    <div class="video_control" id="video_control">
+
+          <div id="button">
+                <input type="range"  style="width:100%; position:absolute; top:-10px;"  max="10000" min="0" value="0" step="1" id="kuaijin">
+                
+                <div style="position:absolute; top:15px; right:130px; height:15px; width:80px; overflow:hidden; z-index:100;">
+                <input type="range"  style=" width:60px;"  max="10" min="0" value="10" step="1" id="voice">
+                </div>
+                <div class="huazhi">高清</div>
+                <!--时间显示sjxs-->
+                <div class="sjxs" id="sjxs">time</div>
+				
+                <div class="list_button" id="list_button">
+                    <img class="button1" src="v_images/play.png"/ >
+                    <img class="button2" src="v_images/xiayige.png"/ >
+                    <img class="button4" src="v_images/danmu.png"/ >
+                    <img class="button5" src="v_images/shengyin.png"/ >
+                    <img class="button8" src="v_images/shezhi.png"/>
+                    <img class="button9" src="v_images/quanping.png"/ id="quanping">
+                 </div>
+          </div>
+
+    </div>
+
+</div>
+
+
+</body>
+</html>
